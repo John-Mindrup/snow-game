@@ -5,9 +5,11 @@ using UnityEngine;
 public class Items : MonoBehaviour
 {
     public List<GameObject> pickupableItems;
-    public List<GameObject> recipe1;
+    public List<GameObject> recipe1, recipe2;
     private List<List<GameObject>> recipes = new();
     public List<GameObject> products;
+
+    public Camera mainCamera;
 
     private static Items _instance;
     public static Items Instance { get { return _instance; } }

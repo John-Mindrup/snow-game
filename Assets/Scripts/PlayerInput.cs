@@ -22,6 +22,7 @@ public class PlayerInput : MonoBehaviour
     private static PlayerInput _instance;
     GameObject[] inventory = new GameObject[10];
     private List<GameObject> recipe = new();
+    private GameObject heldItem;
     public static PlayerInput Instance { get { return _instance; } }
     enum direction
     {
@@ -35,6 +36,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Start()
     {
+        heldItem = null;
         for (int i = 0;i < inventory.Length;i++) { inventory[i] = null; }
         if (_instance != null && _instance != this)
         {
@@ -237,6 +239,52 @@ public class PlayerInput : MonoBehaviour
                        
         }
     }
-    
-    
+
+    private void OnPlace()
+    {
+        Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        Collider2D[] results = new Collider2D[5];
+        Physics2D.OverlapBox(mousePos, new Vector2(0.1f, 0.1f), 0.0f, new ContactFilter2D(), results);
+        foreach (Collider2D c in results)
+        {
+            if (c != null)
+            {
+                GameObject o = c.attachedRigidbody.gameObject;
+                for (int i = 0; i < inventory.Length; i++)
+                {
+                    if (inventory[i] != null && o == inventory[i])
+                    {
+                        Item item = o.GetComponent<Item>();
+                        if (heldItem == null)
+                        {
+                            heldItem = o;
+                            item.selected = false;
+                            item.removeHighlight();
+                            item.setFollowCursor(true);
+                            return;
+                        }
+                        else
+                        {
+                            List<Collider2D> res = new();
+                            Physics2D.OverlapCircle(this.transform.position, 1, new ContactFilter2D(), res);
+                            List<GameObject> objects = new();
+                            foreach(Collider2D collider in res)
+                            {
+                                objects.Add(collider.attachedRigidbody.gameObject);
+                            }
+                            item.setFollowCursor(false);
+                            inventory[i] = null;
+                            if (!objects.Contains(heldItem))
+                            {
+                                addToInvetory(heldItem);
+                            }
+                            heldItem = null;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
 }

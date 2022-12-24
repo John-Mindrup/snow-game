@@ -162,8 +162,12 @@ MonoBehaviour:
   - {fileID: 8349786867191636454, guid: 3bdd115e4ffa4aa4791831aa3400bcf0, type: 3}
   - {fileID: 8276227894895366043, guid: dd721ceb40c7ea54da7ea440c85e6d9d, type: 3}
   - {fileID: 2542400710573639974, guid: 8fd422e5fc380fe4b8d739e21ca0546e, type: 3}
+  recipe2:
+  - {fileID: 5579369496067034195, guid: 1568e822d94bd844d9e13417a8f485db, type: 3}
+  - {fileID: 8537951995565721486, guid: e89459618a748b04eb381f2ca92baea2, type: 3}
   products:
   - {fileID: 5579369496067034195, guid: 1568e822d94bd844d9e13417a8f485db, type: 3}
+  mainCamera: {fileID: 519420031}
   highlight: {fileID: 2692168271535007425, guid: 2fcac7363d3090e42bbdfb264f776f6a, type: 3}
   craftingButton: {fileID: 754367401}
 --- !u!4 &57940940
