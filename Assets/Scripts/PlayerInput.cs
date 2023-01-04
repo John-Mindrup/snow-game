@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 using UnityEngine.Tilemaps;
 
 public class PlayerInput : MonoBehaviour
 {
     public int moveSpeed = 2;
 
-    Vector2 movement;
+    Vector2 movement, mouseMovement, mouseMovementLast;
 
     Rigidbody2D rb;
 
@@ -16,11 +17,13 @@ public class PlayerInput : MonoBehaviour
 
     public Tilemap footGrid1;
     public Tilemap footGrid2;
-    public GameObject hotbar;
+    public GameObject hotbar, Ember;
     public Camera mainCamera;
     private Tile currentFootprints;
+    private bool isDrilling = false;
     private static PlayerInput _instance;
     GameObject[] inventory = new GameObject[10];
+    private int drillTime;
     private List<GameObject> recipe = new();
     private GameObject heldItem;
     public static PlayerInput Instance { get { return _instance; } }
@@ -52,11 +55,26 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(movement != Vector2.zero)
+        if(movement != Vector2.zero && !isDrilling)
         {
             
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
             footprints();
+        }
+        if (isDrilling)
+        {
+            if(drillTime > 0)
+            {
+                drillTime--;
+            }
+            else
+            {
+                isDrilling = false;
+                animator.SetTrigger("EndDrilling");
+                GameObject g = Instantiate(Ember, this.transform.position, Quaternion.identity);
+                addToInvetory(g);
+            }
+            
         }
     }
     private void setAnimatorBools()
@@ -136,6 +154,19 @@ public class PlayerInput : MonoBehaviour
         else if (currentFootprints != footGrid1.GetTile(footGrid1.WorldToCell(rb.position)) && currentFootprints != footGrid2.GetTile(footGrid2.WorldToCell(rb.position)))
             footGrid2.SetTile(footGrid2.WorldToCell(rb.position), TileMapSprites.Instance.tPrints);
     }
+
+    private void onLook(InputValue mouseMovement)
+    {
+        if (isDrilling)
+        {
+            Vector2 mouseDelta = mouseMovement.Get<Vector2>();
+            if(this.mouseMovement != null)
+            {
+                mouseMovementLast = this.mouseMovement;
+            }
+            this.mouseMovement = mouseDelta;
+        }
+    }
     private void OnMove(InputValue movementValue)
     {
         movement = movementValue.Get<Vector2>();
@@ -154,7 +185,7 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
-    private bool addToInvetory(GameObject g)
+    public bool addToInvetory(GameObject g)
     {
         for(int i = 0; i < inventory.Length; i++)
         {
@@ -168,6 +199,20 @@ public class PlayerInput : MonoBehaviour
         }
         return false;
     }
+    public bool removeFromInvetory(GameObject g)
+    {
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i] == g)
+            {
+                Item item = g.GetComponent<Item>();
+                item.removeHighlight();
+                inventory[i] = null;
+                return true;
+            }
+        }
+        return false;
+    }
 
     private Collider2D[] pickup()
     {
@@ -175,19 +220,19 @@ public class PlayerInput : MonoBehaviour
         int count;
         if(currentDirection == direction.North)
         {
-            count = Physics2D.OverlapBox(rb.position + Vector2.up, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
+            count = Physics2D.OverlapBox(rb.position + Vector2.up/2f, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
         }
         else if(currentDirection == direction.East)
         {
-            count = Physics2D.OverlapBox(rb.position + Vector2.right, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
+            count = Physics2D.OverlapBox(rb.position + Vector2.right / 2f, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
         }
         else if (currentDirection == direction.West)
         {
-            count = Physics2D.OverlapBox(rb.position - Vector2.right, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
+            count = Physics2D.OverlapBox(rb.position - Vector2.right / 2f, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
         }
         else
         {
-            count = Physics2D.OverlapBox(rb.position + Vector2.down, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
+            count = Physics2D.OverlapBox(rb.position + Vector2.down / 2f, Vector2.one/1.8f, 0, new ContactFilter2D(), results);
         }
         return results;
 
@@ -209,8 +254,24 @@ public class PlayerInput : MonoBehaviour
                     GameObject product = Items.Instance.craft(recipe);
                     if(product != null)
                     {
-                        foreach(GameObject ob in recipe) { Destroy(ob); }
-                        Instantiate(product,left,Quaternion.identity);
+                        
+                        for(int i = recipe.Count -1; i >= 0; i--)
+                        {
+                            GameObject ob = recipe[i];
+                            removeFromInvetory(ob);
+                            recipe.Remove(ob); 
+                            Item item = ob.GetComponent<Item>(); 
+                            item.removeHighlight(); 
+                            Destroy(ob);
+                        }
+                        if (Items.Instance.removeEnd(product.name).Equals("Joe_BowDrill_valid"))
+                        {
+                            isDrilling = true;
+                            drillTime = 300 + Random.Range(-100, 300);
+                            animator.SetTrigger("StartDrilling");
+                            return;
+                        }
+                        addToInvetory(Instantiate(product,left,Quaternion.identity));
                     }
                 }
                 for (int i = 0; i < inventory.Length; i++)
@@ -254,11 +315,13 @@ public class PlayerInput : MonoBehaviour
                 {
                     if (inventory[i] != null && o == inventory[i])
                     {
+                        
                         Item item = o.GetComponent<Item>();
                         if (heldItem == null)
                         {
                             heldItem = o;
                             item.selected = false;
+                            recipe.Remove(o);
                             item.removeHighlight();
                             item.setFollowCursor(true);
                             return;

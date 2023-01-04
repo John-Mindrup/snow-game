@@ -167,6 +167,8 @@ MonoBehaviour:
   - {fileID: 8537951995565721486, guid: e89459618a748b04eb381f2ca92baea2, type: 3}
   products:
   - {fileID: 5579369496067034195, guid: 1568e822d94bd844d9e13417a8f485db, type: 3}
+  - {fileID: 8254652244386872212, guid: eae386648ecbc7d488aee8a9e91bbb6a, type: 3}
+  - {fileID: 4933576676556517449, guid: 5c4762167dabc644ca9c422b56612339, type: 3}
   mainCamera: {fileID: 519420031}
   highlight: {fileID: 2692168271535007425, guid: 2fcac7363d3090e42bbdfb264f776f6a, type: 3}
   craftingButton: {fileID: 754367401}
@@ -900,6 +902,7 @@ MonoBehaviour:
   footGrid1: {fileID: 2087258303}
   footGrid2: {fileID: 928592730}
   hotbar: {fileID: 630051122}
+  Ember: {fileID: 994076756256812274, guid: 397b94af10814334587f9ca84dc24163, type: 3}
   mainCamera: {fileID: 519420031}
 --- !u!61 &1478270174
 BoxCollider2D:
@@ -938,6 +941,7 @@ GameObject:
   - component: {fileID: 1906588514}
   - component: {fileID: 1906588516}
   - component: {fileID: 1906588515}
+  - component: {fileID: 1906588517}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -4971,6 +4975,26 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1906588517
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906588513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eccd126782aa83c4fa4cc82bdf56672d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1997596141
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Items : MonoBehaviour
 {
     public List<GameObject> pickupableItems;
-    public List<GameObject> recipe1, recipe2;
+    public List<GameObject> recipe1, recipe2, recipe3;
     private List<List<GameObject>> recipes = new();
     public List<GameObject> products;
 
@@ -24,6 +24,8 @@ public class Items : MonoBehaviour
         else
         {
             this.recipes.Add(recipe1);
+            this.recipes.Add(recipe2);
+            this.recipes.Add(recipe3);
             _instance = this;
         }
     }
@@ -83,7 +85,7 @@ public class Items : MonoBehaviour
 
     public string removeEnd(string s)
     {
-        string[] c = s.Split(' ');
+        string[] c = s.Split('&');
         return c[0];
     }
     
