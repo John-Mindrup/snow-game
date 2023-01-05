@@ -13,7 +13,7 @@ public class Items : MonoBehaviour
 
     private static Items _instance;
     public static Items Instance { get { return _instance; } }
-    public GameObject highlight, craftingButton;
+    public GameObject highlight, craftingButton, firePitButton;
 
     private void Awake()
     {
@@ -44,6 +44,14 @@ public class Items : MonoBehaviour
     public bool isCraftingButton(Collider2D  c)
     {
         if(c.attachedRigidbody.gameObject == craftingButton)
+        {
+            return true;
+        }
+        return false;
+    }
+    public bool isFirepitButton(Collider2D c)
+    {
+        if (c.attachedRigidbody.gameObject == firePitButton)
         {
             return true;
         }

@@ -17,7 +17,7 @@ public class PlayerInput : MonoBehaviour
 
     public Tilemap footGrid1;
     public Tilemap footGrid2;
-    public GameObject hotbar, Ember;
+    public GameObject hotbar, Ember, firePit;
     public Camera mainCamera;
     private Tile currentFootprints;
     private bool isDrilling = false;
@@ -274,6 +274,15 @@ public class PlayerInput : MonoBehaviour
                         addToInvetory(Instantiate(product,left,Quaternion.identity));
                     }
                 }
+                if (Items.Instance.isFirepitButton(c))
+                {
+                    if (heldItem != null) return;
+                    heldItem = Instantiate(firePit, this.transform.position, Quaternion.identity);
+                    Item item = heldItem.GetComponent<Item>();
+                    item.setFollowCursor(true);
+                    return;
+
+                }
                 for (int i = 0; i < inventory.Length; i++)
                 {
                     if (inventory[i] != null && o == inventory[i])
@@ -301,11 +310,25 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    private bool inventoryContains(GameObject g)
+    {
+        for(int i = 0; i < inventory.Length; i++)
+        {
+            if (g == inventory[i]) return true;
+        }
+        return false;
+    }
+
     private void OnPlace()
     {
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Collider2D[] results = new Collider2D[5];
         Physics2D.OverlapBox(mousePos, new Vector2(0.1f, 0.1f), 0.0f, new ContactFilter2D(), results);
+        if(heldItem != null && !inventoryContains(heldItem))
+        {
+            Item item = heldItem.GetComponent<Item>();
+            item.setFollowCursor(false);
+        }
         foreach (Collider2D c in results)
         {
             if (c != null)

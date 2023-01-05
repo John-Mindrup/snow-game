@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 1248
+  controlID: 113
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,15 +68,15 @@ MonoBehaviour:
     y: 0
     width: 675
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 13}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 137
+  controlID: 71
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 22
+  controlID: 49
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,7 +278,7 @@ MonoBehaviour:
   - {fileID: 19}
   - {fileID: 14}
   m_Selected: 1
-  m_LastSelected: 2
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -307,14 +307,14 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  progressMessageClearTime: -1
+  progressMessageClearTime: 4318.3252842
   notificationClearTime: -1
   timeSinceLastRotation: -1
-  currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
+  currentBranchAndRemoteHasUpdate: 1
+  currentTrackingStatusHasUpdate: 1
   currentStatusEntriesHasUpdate: 1
   repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -462,468 +462,11 @@ MonoBehaviour:
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 00000000000000001000000000000000
-        - 8d3062be026f59f46a9d1b2cbcf1f83c
-        - 1568e822d94bd844d9e13417a8f485db
-        - 397b94af10814334587f9ca84dc24163
-        - eae386648ecbc7d488aee8a9e91bbb6a
-        - 533e27ec9f8d005429a925004c2b383a
-        - f165b458124d1e84c81a7c7bb5a5dbfb
-        - 9825f1e29034e5d45b096aca54a11688
-        - 60c4ba34e35a27242a0de31d9d8cb6be
-        - 600b98c4494c5ad45954211362da1295
-        - 79e47e73ad315d343aa9d151fde1336a
-        - 2179e02f26828cf48b92ef328a15ee18
-        - 2e5c75583489fab4cb953579e8e8427d
-        - 92456cd205e7287428e3bc603f31811e
-        - 0a238a48fa5f35d4db687b05ebecea47
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Prefabs
-          label: Prefabs
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Prefabs\Bow Drill.prefab
-          label: Bow Drill.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Bow Drill.prefab
-            fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Bow Drill.prefab
-            projectPath: Assets\Prefabs\Bow Drill.prefab
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Prefabs\Ember.prefab
-          label: Ember.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Ember.prefab
-            fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Ember.prefab
-            projectPath: Assets\Prefabs\Ember.prefab
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs\Joe_BowDrill_valid.prefab
-          label: Joe_BowDrill_valid.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Joe_BowDrill_valid.prefab
-            fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Joe_BowDrill_valid.prefab
-            projectPath: Assets\Prefabs\Joe_BowDrill_valid.prefab
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts
-          label: Scripts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scripts\Items.cs
-          label: Items.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Items.cs
-            fullPath: C:\Users\John\Snow Game\Assets\Scripts\Items.cs
-            projectPath: Assets\Scripts\Items.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\PlayerInput.cs
-          label: PlayerInput.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\PlayerInput.cs
-            fullPath: C:\Users\John\Snow Game\Assets\Scripts\PlayerInput.cs
-            projectPath: Assets\Scripts\PlayerInput.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Sprites
-          label: Sprites
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Items
-          label: Items
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Items\Ember.png
-          label: Ember.png
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\Items\Ember.png
-            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Ember.png
-            projectPath: Assets\Sprites\Items\Ember.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Sprites\Joe
-          label: Joe
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Joe\Joe Walking
-          label: Joe Walking
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-          label: Dean's List - S22.pdf
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe Walking\Dean's
-              List - S22.pdf
-            projectPath: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 5
-        - path: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-          label: Joe_Bow_Drill.anim
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe_Bow_Drill.anim
-            projectPath: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 5
+        keys: []
+        values: []
       folders:
-        keys:
-        - Assets
-        - Assets\Prefabs
-        - Assets\Scripts
-        - Assets\Sprites
-        - Assets\Sprites\Items
-        - Assets\Sprites\Joe
-        - Assets\Sprites\Joe\Joe Walking
-        - UserSettings
-        - UserSettings\Layouts
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Prefabs
-          label: Prefabs
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scripts
-          label: Scripts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites
-          label: Sprites
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Items
-          label: Items
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Joe
-          label: Joe
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\Joe\Joe Walking
-          label: Joe Walking
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
+        keys: []
+        values: []
       checkedFileNodes:
         keys: []
         values: []
@@ -952,404 +495,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Prefabs
-        label: Prefabs
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Prefabs\Bow Drill.prefab
-        label: Bow Drill.prefab
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Bow Drill.prefab
-          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Bow Drill.prefab
-          projectPath: Assets\Prefabs\Bow Drill.prefab
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Prefabs\Ember.prefab
-        label: Ember.prefab
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Ember.prefab
-          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Ember.prefab
-          projectPath: Assets\Prefabs\Ember.prefab
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Ember.prefab.meta
-        label: Ember.prefab.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Ember.prefab.meta
-          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Ember.prefab.meta
-          projectPath: Assets\Prefabs\Ember.prefab.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Joe_BowDrill_valid.prefab
-        label: Joe_BowDrill_valid.prefab
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Joe_BowDrill_valid.prefab
-          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Joe_BowDrill_valid.prefab
-          projectPath: Assets\Prefabs\Joe_BowDrill_valid.prefab
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Scripts
-        label: Scripts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scripts\Items.cs
-        label: Items.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Items.cs
-          fullPath: C:\Users\John\Snow Game\Assets\Scripts\Items.cs
-          projectPath: Assets\Scripts\Items.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Scripts\PlayerInput.cs
-        label: PlayerInput.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\PlayerInput.cs
-          fullPath: C:\Users\John\Snow Game\Assets\Scripts\PlayerInput.cs
-          projectPath: Assets\Scripts\PlayerInput.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Sprites
-        label: Sprites
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites\Items
-        label: Items
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites\Items\Ember.png
-        label: Ember.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Items\Ember.png
-          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Ember.png
-          projectPath: Assets\Sprites\Items\Ember.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Items\Ember.png.meta
-        label: Ember.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Items\Ember.png.meta
-          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Ember.png.meta
-          projectPath: Assets\Sprites\Items\Ember.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\Joe
-        label: Joe
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites\Joe\Joe Walking
-        label: Joe Walking
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-        label: Dean's List - S22.pdf
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe Walking\Dean's
-            List - S22.pdf
-          projectPath: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf.meta
-        label: Dean's List - S22.pdf.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf.meta
-          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe Walking\Dean's
-            List - S22.pdf.meta
-          projectPath: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf.meta
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-        label: Joe_Bow_Drill.anim
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe_Bow_Drill.anim
-          projectPath: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Sprites\Joe\Joe_Bow_Drill.anim.meta
-        label: Joe_Bow_Drill.anim.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\Joe\Joe_Bow_Drill.anim.meta
-          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe_Bow_Drill.anim.meta
-          projectPath: Assets\Sprites\Joe\Joe_Bow_Drill.anim.meta
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        label: default-2022.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Users\John\Snow Game\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -1369,96 +514,16 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries:
-    - path: Assets\Prefabs\Bow Drill.prefab
-      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Bow Drill.prefab
-      projectPath: Assets\Prefabs\Bow Drill.prefab
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Prefabs\Ember.prefab
-      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Ember.prefab
-      projectPath: Assets\Prefabs\Ember.prefab
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Ember.prefab.meta
-      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Ember.prefab.meta
-      projectPath: Assets\Prefabs\Ember.prefab.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Joe_BowDrill_valid.prefab
-      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Joe_BowDrill_valid.prefab
-      projectPath: Assets\Prefabs\Joe_BowDrill_valid.prefab
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scripts\Items.cs
-      fullPath: C:\Users\John\Snow Game\Assets\Scripts\Items.cs
-      projectPath: Assets\Scripts\Items.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scripts\PlayerInput.cs
-      fullPath: C:\Users\John\Snow Game\Assets\Scripts\PlayerInput.cs
-      projectPath: Assets\Scripts\PlayerInput.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Sprites\Items\Ember.png
-      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Ember.png
-      projectPath: Assets\Sprites\Items\Ember.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Items\Ember.png.meta
-      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Ember.png.meta
-      projectPath: Assets\Sprites\Items\Ember.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe Walking\Dean's List
-        - S22.pdf
-      projectPath: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf.meta
-      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe Walking\Dean's List
-        - S22.pdf.meta
-      projectPath: Assets\Sprites\Joe\Joe Walking\Dean's List - S22.pdf.meta
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe_Bow_Drill.anim
-      projectPath: Assets\Sprites\Joe\Joe_Bow_Drill.anim
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Sprites\Joe\Joe_Bow_Drill.anim.meta
-      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Joe\Joe_Bow_Drill.anim.meta
-      projectPath: Assets\Sprites\Joe\Joe_Bow_Drill.anim.meta
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: UserSettings\Layouts\default-2022.dwlt
-      fullPath: C:\Users\John\Snow Game\UserSettings\Layouts\default-2022.dwlt
-      projectPath: UserSettings\Layouts\default-2022.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 13 changed files
+    gitStatusEntries: []
+    changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-01-02T12:54:26.289-06:00
+      updatedTimeString: 2023-01-04T16:46:12.766-06:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-01-02T12:57:19.956-06:00
+      updatedTimeString: 2023-01-04T16:46:14.212-06:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2023-01-04T10:15:07.402-06:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -1663,7 +728,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/John-Mindrup/snow-game.git
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
@@ -1674,13 +739,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-01-02T10:54:11.710-06:00
+    updatedTimeString: 2023-01-04T16:46:12.766-06:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-01-02T11:20:58.673-06:00
+    updatedTimeString: 2023-01-04T16:46:14.244-06:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-01-02T12:36:02.619-06:00
+    updatedTimeString: 2023-01-04T16:46:14.212-06:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -1698,8 +763,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
+  repositoryProgressValue: 1
+  repositoryProgressMessage: Pushed
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
@@ -1733,7 +798,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 25592
+  m_LastSelectedObjectID: 25542
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1839,22 +904,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\John\Snow Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2650000
-    m_LastClickedID: 26082
-    m_ExpandedIDs: 0000000080650000e26500006866000000ca9a3b
+    m_SelectedIDs: c0650000
+    m_LastClickedID: 26048
+    m_ExpandedIDs: 0000000094650000c665000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1882,7 +947,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080650000
+    m_ExpandedIDs: 0000000094650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2010,9 +1075,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8043ffff
-      m_LastClickedID: 0
-      m_ExpandedIDs: 24fbffffcc630000
+      m_SelectedIDs: 08640000
+      m_LastClickedID: 25608
+      m_ExpandedIDs: 24fbffffcc630000d2630000da630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2299,7 +1364,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__left
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -2327,9 +1392,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.9904133, y: -0.21397683, z: 0.0012974348}
+    m_Target: {x: -1.4731743, y: -1.0603735, z: -0.119340226}
     speed: 2
-    m_Value: {x: -1.9904133, y: -0.21397683, z: 0.0012974348}
+    m_Value: {x: -1.4731743, y: -1.0603735, z: -0.119340226}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2379,9 +1444,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.88215
+    m_Target: 5.882475
     speed: 2
-    m_Value: 6.88215
+    m_Value: 5.882475
   m_Ortho:
     m_Target: 1
     speed: 2
