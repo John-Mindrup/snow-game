@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2542400710573639979}
   - component: {fileID: 4579276954877855730}
   - component: {fileID: -6155497291706102197}
+  - component: {fileID: 4087640602810765632}
   m_Layer: 0
   m_Name: Stick&
   m_TagString: Untagged
@@ -155,3 +156,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+--- !u!114 &4087640602810765632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542400710573639974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e359a5ea8cab24590c481d09498aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  large: 0
+  burnTime: 5
+  ignites: 0

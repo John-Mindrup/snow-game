@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e59f47601cade704f8e6c4aebb6a26c0
+guid: 8488af5b0106468449af3be5d4641a1f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,7 +71,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -107,85 +107,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Firepit_0
+      name: Fire_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 35
-        width: 28
-        height: 25
+        x: 6
+        y: 33
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fd89672cdfd13c499be721c07706015
-      internalID: -1826616071
+      spriteID: b0bfa1662d0d0364798c4ce85b313c70
+      internalID: -218112285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Firepit_1
+      name: Fire_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 35
-        width: 28
-        height: 25
+        x: 38
+        y: 33
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 652a3b695c1b0284d82943b90f63d864
-      internalID: -1730617510
+      spriteID: 45f603c45cdd4ad4a94f8725e6e47d2f
+      internalID: -1135173563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Firepit_2
+      name: Fire_2
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 28
-        height: 25
+        x: 6
+        y: 1
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d28a4d8e883dd844f8129f27464935b5
-      internalID: 407544126
+      spriteID: fa128928f0aa20043a76c883ed6127a9
+      internalID: 1862206733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Firepit_3
+      name: Fire_3
       rect:
         serializedVersion: 2
-        x: 34
-        y: 3
-        width: 28
-        height: 25
+        x: 38
+        y: 1
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62343ef23505a2941a532a483548caf1
-      internalID: -313291765
+      spriteID: bef69e407cfb2fb44a4d5fa399aa91c1
+      internalID: 1278725797
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Firepit_0: -1826616071
-      Firepit_2: 407544126
-      Firepit_1: -1730617510
-      Firepit_3: -313291765
+      Fire_1: -1135173563
+      Fire_2: 1862206733
+      Fire_3: 1278725797
+      Fire_0: -218112285
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

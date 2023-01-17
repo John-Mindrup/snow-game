@@ -329,6 +329,7 @@ public class PlayerInput : MonoBehaviour
             Item item = heldItem.GetComponent<Item>();
             item.setFollowCursor(false);
         }
+        
         foreach (Collider2D c in results)
         {
             if (c != null)
@@ -351,6 +352,12 @@ public class PlayerInput : MonoBehaviour
                         }
                         else
                         {
+                            Flammable f = heldItem.GetComponent<Flammable>();
+                            firepit pit = o.GetComponent<firepit>();
+                            if (f != null && pit != null)
+                            {
+                                addFuel(pit, f);
+                            }
                             List<Collider2D> res = new();
                             Physics2D.OverlapCircle(this.transform.position, 1, new ContactFilter2D(), res);
                             List<GameObject> objects = new();
@@ -373,4 +380,11 @@ public class PlayerInput : MonoBehaviour
 
         }
     }
+
+    private void addFuel(firepit pit, Flammable f)
+    {
+        pit.addFuel(f.large, f.burnTime);
+        if (f.ignites) pit.ignite();
+    }
 }
+
