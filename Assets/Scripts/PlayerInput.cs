@@ -26,6 +26,7 @@ public class PlayerInput : MonoBehaviour
     private int drillTime;
     private List<GameObject> recipe = new();
     private GameObject heldItem;
+    private bool placeingPit = false;
     public static PlayerInput Instance { get { return _instance; } }
     enum direction
     {
@@ -240,6 +241,8 @@ public class PlayerInput : MonoBehaviour
 
     private void OnSelect()
     {
+        if (heldItem != null)
+            return;
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Collider2D[] results = new Collider2D[5];
         Physics2D.OverlapBox(mousePos, new Vector2(0.1f, 0.1f), 0.0f, new ContactFilter2D(), results);
@@ -328,7 +331,31 @@ public class PlayerInput : MonoBehaviour
         {
             Item item = heldItem.GetComponent<Item>();
             item.setFollowCursor(false);
+            heldItem = null;
         }
+        Flammable f = null;
+        if(heldItem != null)
+            f = heldItem.GetComponent<Flammable>();
+        if (f != null)
+        {
+            foreach (Collider2D c in results)
+            {
+                if(c != null)
+                {
+                    firepit pit = c.attachedRigidbody.gameObject.GetComponent<firepit>();
+                    if (pit != null)
+                    {
+                        addFuel(pit, f);
+                        heldItem.GetComponent<Item>().setFollowCursor(false);
+                        Destroy(heldItem);
+                        heldItem = null;
+                        return;
+                    }
+                }
+                
+            }
+        }
+        
         
         foreach (Collider2D c in results)
         {
@@ -352,12 +379,6 @@ public class PlayerInput : MonoBehaviour
                         }
                         else
                         {
-                            Flammable f = heldItem.GetComponent<Flammable>();
-                            firepit pit = o.GetComponent<firepit>();
-                            if (f != null && pit != null)
-                            {
-                                addFuel(pit, f);
-                            }
                             List<Collider2D> res = new();
                             Physics2D.OverlapCircle(this.transform.position, 1, new ContactFilter2D(), res);
                             List<GameObject> objects = new();

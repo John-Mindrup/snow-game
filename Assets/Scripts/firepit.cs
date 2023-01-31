@@ -9,18 +9,33 @@ public class firepit : MonoBehaviour
     public float smallFuel;
     public float largeFuel;
     public bool isLit;
+    private SpriteRenderer sr;
     public Sprite empty, large, small, largesmall;
     public GameObject Fire;
-    private GameObject fireInstace;
+    private GameObject fireInstance;
     void Start()
     {
         smallFuel = 0f;
         largeFuel = 0f;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (smallFuel > 0f && largeFuel > 0f)
+        {
+            sr.sprite = largesmall;
+        }
+        else if (smallFuel > 0f)
+        {
+            sr.sprite = small;
+        }
+        else if (largeFuel > 0f)
+        {
+            sr.sprite = large;
+        }
+        else sr.sprite = empty;
         if (isLit)
         {
             if(largeFuel > 0f)
@@ -31,11 +46,12 @@ public class firepit : MonoBehaviour
             {
                 Mathf.Clamp(smallFuel -= .05f, 0f, 100f) ;
             }
-            if(largeFuel == 0f && smallFuel == 0f)
+            if(largeFuel <= 0f && smallFuel <= 0f)
             {
                 isLit = false;
-                Destroy(fireInstace);
+                Destroy(fireInstance);
             }
+            Debug.Log(largeFuel);
         }
     }
 
@@ -55,7 +71,7 @@ public class firepit : MonoBehaviour
         if (!isLit && smallFuel >= .05f)
         {
             isLit = true;
-            fireInstace = Instantiate(Fire, this.transform.position, Quaternion.identity);
+            fireInstance = Instantiate(Fire, this.transform.position, Quaternion.identity);
         }
     }
 }
