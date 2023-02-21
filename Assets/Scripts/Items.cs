@@ -8,6 +8,7 @@ public class Items : MonoBehaviour
     public List<GameObject> recipe1, recipe2, recipe3;
     private List<List<GameObject>> recipes = new();
     public List<GameObject> products;
+    private List<firepit> firepits = new();
 
     public Camera mainCamera;
 
@@ -56,6 +57,22 @@ public class Items : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public List<firepit> getFirepits()
+    {
+        return firepits;
+    }
+
+    public void addFirepit(firepit f)
+    {
+        firepits.Add(f);
+        if(firepits.Count > 10)
+        {
+            firepit remove = firepits[0];
+            firepits.Remove(remove);
+            Destroy(remove.gameObject);
+        }
     }
 
     public int compareRecipes(List<GameObject> a, List<GameObject> b)

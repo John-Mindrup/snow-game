@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class firepit : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class firepit : MonoBehaviour
         smallFuel = 0f;
         largeFuel = 0f;
         sr = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -51,8 +53,22 @@ public class firepit : MonoBehaviour
                 isLit = false;
                 Destroy(fireInstance);
             }
-            Debug.Log(largeFuel);
         }
+    }
+
+    public double getOutputTemp()
+    {
+        if (!isLit)
+            return 0;
+        float maxDistance = 50f;
+        double ret = 20 * Mathf.Sqrt(Mathf.Sqrt(largeFuel * 5 + smallFuel*2));
+        
+        PlayerInput player = PlayerInput.Instance;
+        float distance = (player.transform.position - transform.position).magnitude;
+        if (distance > maxDistance || distance == 0)
+            return 0;
+        ret *= (1 - (distance / maxDistance));
+        return ret;
     }
 
     public void addFuel(bool large, float amount)

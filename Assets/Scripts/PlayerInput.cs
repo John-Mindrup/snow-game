@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -15,8 +17,11 @@ public class PlayerInput : MonoBehaviour
 
     Animator animator;
 
+    private Temperature temperature;
+
     public Tilemap footGrid1;
     public Tilemap footGrid2;
+    public TMP_Text feelsLike, bodyTemp;
     public GameObject hotbar, Ember, firePit;
     public Camera mainCamera;
     private Tile currentFootprints;
@@ -40,6 +45,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Start()
     {
+        temperature = new Temperature();
         heldItem = null;
         for (int i = 0;i < inventory.Length;i++) { inventory[i] = null; }
         if (_instance != null && _instance != this)
@@ -56,11 +62,25 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        temperature.UpdateTemp();
+        feelsLike.text = "Feels Like: " + System.String.Format("{0:0.00}",temperature.getExperiencedTemp());
+        bodyTemp.text = "Body Temp: " + System.String.Format("{0:0.00}", temperature.getPlayerTemp());
         if(movement != Vector2.zero && !isDrilling)
         {
+            RaycastHit2D[] hits = new RaycastHit2D[10];
+            rb.Cast(movement, hits, moveSpeed * Time.fixedDeltaTime);
+            bool collide = false;
+            foreach(RaycastHit2D r in hits)
+            {
+                if (r.rigidbody != null && r.rigidbody.gameObject.GetComponent<isCollision>() != null)
+                    collide = true;
+            }
+            if(!collide)
+            {
+                rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+                footprints();
+            }
             
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-            footprints();
         }
         if (isDrilling)
         {
@@ -281,6 +301,7 @@ public class PlayerInput : MonoBehaviour
                 {
                     if (heldItem != null) return;
                     heldItem = Instantiate(firePit, this.transform.position, Quaternion.identity);
+                    Items.Instance.addFirepit(heldItem.GetComponent<firepit>());
                     Item item = heldItem.GetComponent<Item>();
                     item.setFollowCursor(true);
                     return;
