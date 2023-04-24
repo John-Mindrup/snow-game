@@ -23,8 +23,10 @@ public class PlayerInput : MonoBehaviour
     public Tilemap footGrid2;
     public TMP_Text feelsLike, bodyTemp;
     public GameObject hotbar, Ember, firePit;
+    public GameObject waterBottle, hoodieString;
     public Camera mainCamera;
     private Tile currentFootprints;
+
     private bool isDrilling = false;
     private static PlayerInput _instance;
     GameObject[] inventory = new GameObject[10];
@@ -32,6 +34,10 @@ public class PlayerInput : MonoBehaviour
     private List<GameObject> recipe = new();
     private GameObject heldItem;
     private bool placeingPit = false;
+    private bool journalOpen = false;
+    private GameObject journal;
+    private const int MAX_CONDITION = 5;
+    private int Condition;
     public static PlayerInput Instance { get { return _instance; } }
     enum direction
     {
@@ -42,12 +48,17 @@ public class PlayerInput : MonoBehaviour
         West
     }
     direction currentDirection = direction.None;
+    private int spawnCountdown = 18000;
 
     private void Start()
     {
+        Condition = MAX_CONDITION;
+        journal = GetComponentInChildren<Journal>().gameObject;
         temperature = new Temperature();
         heldItem = null;
         for (int i = 0;i < inventory.Length;i++) { inventory[i] = null; }
+        addToInvetory(waterBottle.gameObject);
+        addToInvetory(hoodieString.gameObject);
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -62,9 +73,18 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        spawnCountdown--;
+        if(spawnCountdown == 0)
+        {
+            spawnCountdown = 36000;
+            GameObject[] trees = GameObject.FindGameObjectsWithTag("TreeObject");
+            foreach (GameObject t in trees) { t.SendMessage("SpawnObject"); }
+        }
         temperature.UpdateTemp();
+        temperature.UpdateWater();
         feelsLike.text = "Feels Like: " + System.String.Format("{0:0.00}",temperature.getExperiencedTemp());
         bodyTemp.text = "Body Temp: " + System.String.Format("{0:0.00}", temperature.getPlayerTemp());
+        float speedAdjust = (float)GetCondition()/(float)MAX_CONDITION;
         if(movement != Vector2.zero && !isDrilling)
         {
             RaycastHit2D[] hits = new RaycastHit2D[10];
@@ -74,10 +94,15 @@ public class PlayerInput : MonoBehaviour
             {
                 if (r.rigidbody != null && r.rigidbody.gameObject.GetComponent<isCollision>() != null)
                     collide = true;
+                if (r.collider != null && r.collider.gameObject.GetComponent<isCollision>())
+                    collide = true;
             }
             if(!collide)
             {
-                rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+                Debug.Log(GetCondition());
+                Debug.Log(speedAdjust);
+                Vector2 adjustedMovement = new Vector2(movement.x * speedAdjust, movement.y * speedAdjust);
+                rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * adjustedMovement);
                 footprints();
             }
             
@@ -97,6 +122,23 @@ public class PlayerInput : MonoBehaviour
             }
             
         }
+    }
+
+    private int GetCondition()
+    {
+        int ret = MAX_CONDITION;
+        float water = temperature.GetWater();
+        double temp = temperature.getPlayerTemp();
+        if (water / Temperature.MAX_WATER < .333333f)
+            ret -= 2;
+        else if (water / Temperature.MAX_WATER < .6666667f)
+            ret -= 1;
+        if (temp < 89.6f)
+            ret -= 2;
+        else if (temp < 95.0f)
+            ret -= 1;
+        Debug.Log(ret);
+        return ret;
     }
     private void setAnimatorBools()
     {
@@ -206,6 +248,12 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    void OnOpenJournal()
+    {
+        journal.SendMessage("setVisibility", !journalOpen);
+        journalOpen = !journalOpen;
+    }
+
     public bool addToInvetory(GameObject g)
     {
         for(int i = 0; i < inventory.Length; i++)
@@ -215,6 +263,8 @@ public class PlayerInput : MonoBehaviour
                 inventory[i] = g;
                 g.transform.parent = hotbar.transform;
                 g.transform.position = hotbar.transform.position + Vector3.right / 2 + Vector3.right * i;
+                SpriteRenderer r = g.GetComponent<SpriteRenderer>();
+                r.sortingLayerName = "UI";
                 return true;
             }
         }
@@ -229,6 +279,10 @@ public class PlayerInput : MonoBehaviour
                 Item item = g.GetComponent<Item>();
                 item.removeHighlight();
                 inventory[i] = null;
+                Transform childToRemove = hotbar.transform.Find(g.name);
+                childToRemove.SetParent(null);
+                SpriteRenderer r = g.GetComponent<SpriteRenderer>();
+                r.sortingLayerName = "Default";
                 return true;
             }
         }
@@ -271,6 +325,12 @@ public class PlayerInput : MonoBehaviour
             if(c != null)
             {
                 GameObject o = c.attachedRigidbody.gameObject;
+                Bottle b = o.GetComponent<Bottle>();
+                if(b != null)
+                {
+                    b.drink();
+                    return;
+                }
                 if (Items.Instance.isCraftingButton(c))
                 {
                     Vector3 left = recipe[0].transform.position;
@@ -343,17 +403,17 @@ public class PlayerInput : MonoBehaviour
         return false;
     }
 
+    private void OnTest()
+    {
+        
+    }
+
     private void OnPlace()
     {
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Collider2D[] results = new Collider2D[5];
         Physics2D.OverlapBox(mousePos, new Vector2(0.1f, 0.1f), 0.0f, new ContactFilter2D(), results);
-        if(heldItem != null && !inventoryContains(heldItem))
-        {
-            Item item = heldItem.GetComponent<Item>();
-            item.setFollowCursor(false);
-            heldItem = null;
-        }
+        
         Flammable f = null;
         if(heldItem != null)
             f = heldItem.GetComponent<Flammable>();
@@ -376,8 +436,14 @@ public class PlayerInput : MonoBehaviour
                 
             }
         }
-        
-        
+        if (heldItem != null && !inventoryContains(heldItem))
+        {
+            Item item = heldItem.GetComponent<Item>();
+            item.setFollowCursor(false);
+            heldItem = null;
+        }
+
+
         foreach (Collider2D c in results)
         {
             if (c != null)
@@ -394,6 +460,7 @@ public class PlayerInput : MonoBehaviour
                             heldItem = o;
                             item.selected = false;
                             recipe.Remove(o);
+                            removeFromInvetory(o);
                             item.removeHighlight();
                             item.setFollowCursor(true);
                             return;

@@ -25,6 +25,8 @@ public class Item : MonoBehaviour
     public void addHighlight(GameObject o)
     {
         highlightInstance = Instantiate(Items.Instance.highlight, o.gameObject.transform.position, Quaternion.identity);
+        SpriteRenderer r = highlightInstance.GetComponent<SpriteRenderer>();
+        r.sortingLayerName = "UI";
     }
     public void removeHighlight()
     {

@@ -60,8 +60,8 @@ public class firepit : MonoBehaviour
     {
         if (!isLit)
             return 0;
-        float maxDistance = 50f;
-        double ret = 20 * Mathf.Sqrt(Mathf.Sqrt(largeFuel * 5 + smallFuel*2));
+        float maxDistance = 10f;
+        double ret = 20 * Mathf.Sqrt(Mathf.Sqrt(largeFuel * 8 + smallFuel*4));
         
         PlayerInput player = PlayerInput.Instance;
         float distance = (player.transform.position - transform.position).magnitude;

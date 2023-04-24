@@ -7,11 +7,15 @@ public class Temperature : MonoBehaviour
     public double globalTemp = 10;
     private double experiencedTemp;
 
-    private double playerTemp;
+    private static double playerTemp;
+
+    public const float MAX_WATER = 162000;
+    private static float playerWater;
 
     public Temperature()
     {
         playerTemp = 98.6;
+        playerWater = MAX_WATER;
     }
     private double calcExperiencedTemp(List<firepit> firepits)
     {
@@ -37,12 +41,41 @@ public class Temperature : MonoBehaviour
         playerTemp = t;
     }
 
-    // Update is called once per frame
     public void UpdateTemp()
     {
         List<firepit> firepits = Items.Instance.getFirepits();
         experiencedTemp = calcExperiencedTemp(firepits);
         double diff = (experiencedTemp + 20) - playerTemp;
-        playerTemp += .00002 * diff;
+        if (diff < 0)
+            playerTemp += .00002 * diff;
+        else
+            playerTemp += .0001 * diff;
+    }
+
+    public float GetWater()
+    {
+        return playerWater;
+    }
+
+    public void UpdateWater()
+    {
+        playerWater--;
+    }
+
+    public static void Drink(Bottle bottle)
+    {
+        Debug.Log(bottle.GetContents());
+        if(playerWater + bottle.GetContents() * 5 > MAX_WATER)
+        {
+            bottle.SetContents(bottle.GetContents() - (MAX_WATER - playerWater)/5);
+            playerWater = MAX_WATER;
+            
+        }
+        else
+        {
+            playerWater += (int)bottle.GetContents()*5;
+            bottle.SetContents(0);
+        }
+        Debug.Log(bottle.GetContents());
     }
 }

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 117
+  controlID: 53
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,9 +64,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1233
+    x: 1613
     y: 0
-    width: 687
+    width: 307
     height: 939
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -76,7 +76,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 291
-    height: 556
+    width: 302
+    height: 591
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
@@ -119,15 +119,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 556
-    width: 1233
-    height: 383
+    y: 591
+    width: 1613
+    height: 348
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
-  - {fileID: 20}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
@@ -220,12 +220,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1233
+    width: 1613
     height: 939
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 51
+  controlID: 54
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,12 +245,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1233
-    height: 556
+    width: 1613
+    height: 591
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 52
+  controlID: 55
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,24 +261,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 291
+    x: 302
     y: 0
-    width: 942
-    height: 556
+    width: 1311
+    height: 591
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 18}
-  - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 20}
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,9 +299,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1245
+    x: 1303
     y: 73
-    width: 674
+    width: 616
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -310,7 +310,7 @@ MonoBehaviour:
   progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
-  currentBranchAndRemoteHasUpdate: 0
+  currentBranchAndRemoteHasUpdate: 1
   currentTrackingStatusHasUpdate: 1
   currentStatusEntriesHasUpdate: 1
   repositoryProgressHasUpdate: 1
@@ -459,18 +459,45 @@ MonoBehaviour:
     commitBody: 
     commitMessage: 
     currentBranch: master
-    treeScroll: {x: 0, y: 0}
+    treeScroll: {x: 0, y: 145}
     treeChanges:
       assets:
         keys:
         - 00000000000000001000000000000000
+        - 8d3062be026f59f46a9d1b2cbcf1f83c
+        - 3bdd115e4ffa4aa4791831aa3400bcf0
+        - e89459618a748b04eb381f2ca92baea2
+        - 1a33671ac1846ba498da947370836885
+        - 0dcada5a3e695c649aeb2c893ddc9b34
         - 131a6b21c8605f84396be9f6751fb6e3
+        - 0e9efe68592b4174081edfd57b3e3f58
         - 2cda990e2423bbf4892e6590ba056729
         - 533e27ec9f8d005429a925004c2b383a
+        - 9691d4f0266ecb24aa4888af9f5994db
         - 42e4eb1bdb34d5245be95a19344306f0
+        - af19df93d951e9348aa5af4e1687eccc
         - f165b458124d1e84c81a7c7bb5a5dbfb
+        - 34bf3096538903e4580009e705b319d8
         - 9825f1e29034e5d45b096aca54a11688
         - 4427cfe0338f8d94da0d07d2adc27e6d
+        - 4f5a611a0b4cdef439dc0b9749fada0f
+        - a785a2cec09f73840a51cffed4d64f99
+        - 60c4ba34e35a27242a0de31d9d8cb6be
+        - 9ba4863d5ba98e34ba71b12cdbb41788
+        - 3c99e8f25b2a21e419299e1daa863c9b
+        - 4199c561af4a03443ae5b03727c4b890
+        - 82b9fd30cd48ee34dae7370cdc58b9f8
+        - 2dcefeca0f9a89a48a37bea4eb5d7ae7
+        - 600b98c4494c5ad45954211362da1295
+        - 4b45da4abf9ea81469baf1e7a7525d66
+        - 1787c53441584bd418b62aeb7b4b8b43
+        - 8f05e63b3db69c9468b42d66adba294e
+        - f54d1bd14bd3ca042bd867b519fee8cc
+        - 243e06394e614e5d99fab26083b707fa
+        - 731f1baa9d144a9897cb1d341c2092b8
+        - 2e498d1c8094910479dc3e1b768306a4
+        - 00000000000000004000000000000000
+        - 00000000000000003000000000000000
         values:
         - path: Assets
           label: Assets
@@ -481,7 +508,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -490,6 +517,96 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Prefabs
+          label: Prefabs
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Prefabs\Branch&.prefab
+          label: Branch&.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Prefabs\Branch&.prefab
+            fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Branch&.prefab
+            projectPath: Assets\Prefabs\Branch&.prefab
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Prefabs\Log&.prefab
+          label: Log&.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Prefabs\Log&.prefab
+            fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Log&.prefab
+            projectPath: Assets\Prefabs\Log&.prefab
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Prefabs\PineTree.prefab
+          label: PineTree.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Prefabs\PineTree.prefab
+            fullPath: C:\Users\John\Snow Game\Assets\Prefabs\PineTree.prefab
+            projectPath: Assets\Prefabs\PineTree.prefab
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Prefabs\Water_Bottle.prefab
+          label: Water_Bottle.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Prefabs\Water_Bottle.prefab
+            fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Water_Bottle.prefab
+            projectPath: Assets\Prefabs\Water_Bottle.prefab
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
         - path: Assets\Scenes
           label: Scenes
           level: 1
@@ -499,7 +616,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -508,6 +625,24 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Scenes\New Scene.unity
+          label: New Scene.unity
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scenes\New Scene.unity
+            fullPath: C:\Users\John\Snow Game\Assets\Scenes\New Scene.unity
+            projectPath: Assets\Scenes\New Scene.unity
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
         - path: Assets\Scenes\SampleScene.unity
           label: SampleScene.unity
           level: 2
@@ -517,7 +652,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scenes\SampleScene.unity
@@ -535,7 +670,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -544,6 +679,24 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Scripts\Bottle.cs
+          label: Bottle.cs
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Bottle.cs
+            fullPath: C:\Users\John\Snow Game\Assets\Scripts\Bottle.cs
+            projectPath: Assets\Scripts\Bottle.cs
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
         - path: Assets\Scripts\firepit.cs
           label: firepit.cs
           level: 2
@@ -553,12 +706,30 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\firepit.cs
             fullPath: C:\Users\John\Snow Game\Assets\Scripts\firepit.cs
             projectPath: Assets\Scripts\firepit.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\Item.cs
+          label: Item.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Item.cs
+            fullPath: C:\Users\John\Snow Game\Assets\Scripts\Item.cs
+            projectPath: Assets\Scripts\Item.cs
             originalPath: 
             indexStatus: 0
             workTreeStatus: 3
@@ -571,7 +742,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\Items.cs
@@ -580,6 +751,24 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 3
+        - path: Assets\Scripts\Journal.cs
+          label: Journal.cs
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\Journal.cs
+            fullPath: C:\Users\John\Snow Game\Assets\Scripts\Journal.cs
+            projectPath: Assets\Scripts\Journal.cs
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
         - path: Assets\Scripts\PlayerInput.cs
           label: PlayerInput.cs
           level: 2
@@ -589,7 +778,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\PlayerInput.cs
@@ -602,25 +791,360 @@ MonoBehaviour:
           label: Temperature.cs
           level: 2
           isFolder: 0
-          isContainer: 1
+          isContainer: 0
           isCollapsed: 0
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: Assets\Scripts\Temperature.cs
             fullPath: C:\Users\John\Snow Game\Assets\Scripts\Temperature.cs
             projectPath: Assets\Scripts\Temperature.cs
             originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Scripts\TreeScript.cs
+          label: TreeScript.cs
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Scripts\TreeScript.cs
+            fullPath: C:\Users\John\Snow Game\Assets\Scripts\TreeScript.cs
+            projectPath: Assets\Scripts\TreeScript.cs
+            originalPath: 
             indexStatus: 1
             workTreeStatus: 1
+        - path: Assets\Snow Game.inputactions
+          label: Snow Game.inputactions
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Snow Game.inputactions
+            fullPath: C:\Users\John\Snow Game\Assets\Snow Game.inputactions
+            projectPath: Assets\Snow Game.inputactions
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Sprites
+          label: Sprites
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Fences.asset
+          label: Fences.asset
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Fences.asset
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.asset
+            projectPath: Assets\Sprites\Fences.asset
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Sprites\Fences.png
+          label: Fences.png
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Fences.png
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.png
+            projectPath: Assets\Sprites\Fences.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Sprites\Fences_0.asset
+          label: Fences_0.asset
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Fences_0.asset
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_0.asset
+            projectPath: Assets\Sprites\Fences_0.asset
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Sprites\Fences_1.asset
+          label: Fences_1.asset
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Fences_1.asset
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_1.asset
+            projectPath: Assets\Sprites\Fences_1.asset
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Sprites\Fences_2.asset
+          label: Fences_2.asset
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Fences_2.asset
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_2.asset
+            projectPath: Assets\Sprites\Fences_2.asset
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Sprites\Items
+          label: Items
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Items\Open_Book.png
+          label: Open_Book.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Items\Open_Book.png
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Open_Book.png
+            projectPath: Assets\Sprites\Items\Open_Book.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Sprites\Items\Water_Bottle.png
+          label: Water_Bottle.png
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Items\Water_Bottle.png
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Water_Bottle.png
+            projectPath: Assets\Sprites\Items\Water_Bottle.png
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
+        - path: Assets\Sprites\Rectangular Palette.prefab
+          label: Rectangular Palette.prefab
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Sprites\Rectangular Palette.prefab
+            fullPath: C:\Users\John\Snow Game\Assets\Sprites\Rectangular Palette.prefab
+            projectPath: Assets\Sprites\Rectangular Palette.prefab
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\TextMesh Pro
+          label: TextMesh Pro
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Resources
+          label: Resources
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Resources\Fonts & Materials
+          label: Fonts & Materials
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
+            - Fallback.asset
+          label: LiberationSans SDF - Fallback.asset
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+              SDF - Fallback.asset
+            fullPath: C:\Users\John\Snow Game\Assets\TextMesh Pro\Resources\Fonts
+              & Materials\LiberationSans SDF - Fallback.asset
+            projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+              SDF - Fallback.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: ProjectSettings\ProjectSettings.asset
+          label: ProjectSettings.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: ProjectSettings\ProjectSettings.asset
+            fullPath: C:\Users\John\Snow Game\ProjectSettings\ProjectSettings.asset
+            projectPath: ProjectSettings\ProjectSettings.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: ProjectSettings\TagManager.asset
+          label: TagManager.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: ProjectSettings\TagManager.asset
+            fullPath: C:\Users\John\Snow Game\ProjectSettings\TagManager.asset
+            projectPath: ProjectSettings\TagManager.asset
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       folders:
         keys:
         - Assets
+        - Assets\Prefabs
         - Assets\Scenes
         - Assets\Scripts
+        - Assets\Sprites
+        - Assets\Sprites\Items
+        - Assets\TextMesh Pro
+        - Assets\TextMesh Pro\Resources
+        - Assets\TextMesh Pro\Resources\Fonts & Materials
+        - ProjectSettings
         - UserSettings
         - UserSettings\Layouts
         values:
@@ -633,7 +1157,25 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Prefabs
+          label: Prefabs
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -651,7 +1193,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -669,7 +1211,115 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites
+          label: Sprites
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Sprites\Items
+          label: Items
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\TextMesh Pro
+          label: TextMesh Pro
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Resources
+          label: Resources
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Resources\Fonts & Materials
+          label: Fonts & Materials
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: ProjectSettings
+          label: ProjectSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -687,7 +1337,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -705,7 +1355,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -715,141 +1365,8 @@ MonoBehaviour:
             indexStatus: 0
             workTreeStatus: 0
       checkedFileNodes:
-        keys:
-        - Assets\Scenes\SampleScene.unity
-        - Assets\Scripts\firepit.cs
-        - Assets\Scripts\Items.cs
-        - Assets\Scripts\PlayerInput.cs
-        - Assets\Scripts\Temperature.cs
-        - Assets\Scripts\Temperature.cs.meta
-        - UserSettings\Layouts\default-2022.dwlt
-        values:
-        - path: Assets\Scenes\SampleScene.unity
-          label: SampleScene.unity
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scenes\SampleScene.unity
-            fullPath: C:\Users\John\Snow Game\Assets\Scenes\SampleScene.unity
-            projectPath: Assets\Scenes\SampleScene.unity
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\firepit.cs
-          label: firepit.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\firepit.cs
-            fullPath: C:\Users\John\Snow Game\Assets\Scripts\firepit.cs
-            projectPath: Assets\Scripts\firepit.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\Items.cs
-          label: Items.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Items.cs
-            fullPath: C:\Users\John\Snow Game\Assets\Scripts\Items.cs
-            projectPath: Assets\Scripts\Items.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\PlayerInput.cs
-          label: PlayerInput.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\PlayerInput.cs
-            fullPath: C:\Users\John\Snow Game\Assets\Scripts\PlayerInput.cs
-            projectPath: Assets\Scripts\PlayerInput.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts\Temperature.cs
-          label: Temperature.cs
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Temperature.cs
-            fullPath: C:\Users\John\Snow Game\Assets\Scripts\Temperature.cs
-            projectPath: Assets\Scripts\Temperature.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Scripts\Temperature.cs.meta
-          label: Temperature.cs.meta
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Temperature.cs.meta
-            fullPath: C:\Users\John\Snow Game\Assets\Scripts\Temperature.cs.meta
-            projectPath: Assets\Scripts\Temperature.cs.meta
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: UserSettings\Layouts\default-2022.dwlt
-          label: default-2022.dwlt
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: UserSettings\Layouts\default-2022.dwlt
-            fullPath: C:\Users\John\Snow Game\UserSettings\Layouts\default-2022.dwlt
-            projectPath: UserSettings\Layouts\default-2022.dwlt
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       title: 
       pathSeparator: \
       displayRootNode: 0
@@ -866,7 +1383,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -884,7 +1401,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -893,6 +1410,132 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets\Prefabs
+        label: Prefabs
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Prefabs\Branch&.prefab
+        label: Branch&.prefab
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Prefabs\Branch&.prefab
+          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Branch&.prefab
+          projectPath: Assets\Prefabs\Branch&.prefab
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Prefabs\Log&.prefab
+        label: Log&.prefab
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Prefabs\Log&.prefab
+          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Log&.prefab
+          projectPath: Assets\Prefabs\Log&.prefab
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Prefabs\PineTree.prefab
+        label: PineTree.prefab
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Prefabs\PineTree.prefab
+          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\PineTree.prefab
+          projectPath: Assets\Prefabs\PineTree.prefab
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Prefabs\PineTree.prefab.meta
+        label: PineTree.prefab.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Prefabs\PineTree.prefab.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\PineTree.prefab.meta
+          projectPath: Assets\Prefabs\PineTree.prefab.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Prefabs\Water_Bottle.prefab
+        label: Water_Bottle.prefab
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Prefabs\Water_Bottle.prefab
+          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Water_Bottle.prefab
+          projectPath: Assets\Prefabs\Water_Bottle.prefab
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Prefabs\Water_Bottle.prefab.meta
+        label: Water_Bottle.prefab.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Prefabs\Water_Bottle.prefab.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Water_Bottle.prefab.meta
+          projectPath: Assets\Prefabs\Water_Bottle.prefab.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Assets\Scenes
         label: Scenes
         level: 1
@@ -902,7 +1545,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -911,6 +1554,42 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets\Scenes\New Scene.unity
+        label: New Scene.unity
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scenes\New Scene.unity
+          fullPath: C:\Users\John\Snow Game\Assets\Scenes\New Scene.unity
+          projectPath: Assets\Scenes\New Scene.unity
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Scenes\New Scene.unity.meta
+        label: New Scene.unity.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scenes\New Scene.unity.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Scenes\New Scene.unity.meta
+          projectPath: Assets\Scenes\New Scene.unity.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Assets\Scenes\SampleScene.unity
         label: SampleScene.unity
         level: 2
@@ -920,7 +1599,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scenes\SampleScene.unity
@@ -938,7 +1617,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -947,6 +1626,42 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets\Scripts\Bottle.cs
+        label: Bottle.cs
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Bottle.cs
+          fullPath: C:\Users\John\Snow Game\Assets\Scripts\Bottle.cs
+          projectPath: Assets\Scripts\Bottle.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Scripts\Bottle.cs.meta
+        label: Bottle.cs.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Bottle.cs.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Scripts\Bottle.cs.meta
+          projectPath: Assets\Scripts\Bottle.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Assets\Scripts\firepit.cs
         label: firepit.cs
         level: 2
@@ -956,12 +1671,30 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\firepit.cs
           fullPath: C:\Users\John\Snow Game\Assets\Scripts\firepit.cs
           projectPath: Assets\Scripts\firepit.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Scripts\Item.cs
+        label: Item.cs
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Item.cs
+          fullPath: C:\Users\John\Snow Game\Assets\Scripts\Item.cs
+          projectPath: Assets\Scripts\Item.cs
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
@@ -974,7 +1707,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\Items.cs
@@ -983,6 +1716,42 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
+      - path: Assets\Scripts\Journal.cs
+        label: Journal.cs
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Journal.cs
+          fullPath: C:\Users\John\Snow Game\Assets\Scripts\Journal.cs
+          projectPath: Assets\Scripts\Journal.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Scripts\Journal.cs.meta
+        label: Journal.cs.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\Journal.cs.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Scripts\Journal.cs.meta
+          projectPath: Assets\Scripts\Journal.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Assets\Scripts\PlayerInput.cs
         label: PlayerInput.cs
         level: 2
@@ -992,7 +1761,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\PlayerInput.cs
@@ -1005,22 +1774,40 @@ MonoBehaviour:
         label: Temperature.cs
         level: 2
         isFolder: 0
-        isContainer: 1
+        isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: Assets\Scripts\Temperature.cs
           fullPath: C:\Users\John\Snow Game\Assets\Scripts\Temperature.cs
           projectPath: Assets\Scripts\Temperature.cs
           originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Scripts\TreeScript.cs
+        label: TreeScript.cs
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Scripts\TreeScript.cs
+          fullPath: C:\Users\John\Snow Game\Assets\Scripts\TreeScript.cs
+          projectPath: Assets\Scripts\TreeScript.cs
+          originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets\Scripts\Temperature.cs.meta
-        label: Temperature.cs.meta
+      - path: Assets\Scripts\TreeScript.cs.meta
+        label: TreeScript.cs.meta
         level: 3
         isFolder: 0
         isContainer: 0
@@ -1028,15 +1815,505 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Scripts\Temperature.cs.meta
-          fullPath: C:\Users\John\Snow Game\Assets\Scripts\Temperature.cs.meta
-          projectPath: Assets\Scripts\Temperature.cs.meta
+          path: Assets\Scripts\TreeScript.cs.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Scripts\TreeScript.cs.meta
+          projectPath: Assets\Scripts\TreeScript.cs.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
+      - path: Assets\Snow Game.inputactions
+        label: Snow Game.inputactions
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Snow Game.inputactions
+          fullPath: C:\Users\John\Snow Game\Assets\Snow Game.inputactions
+          projectPath: Assets\Snow Game.inputactions
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Sprites
+        label: Sprites
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Sprites\Fences.asset
+        label: Fences.asset
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences.asset
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.asset
+          projectPath: Assets\Sprites\Fences.asset
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences.asset.meta
+        label: Fences.asset.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences.asset.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.asset.meta
+          projectPath: Assets\Sprites\Fences.asset.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences.png
+        label: Fences.png
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences.png
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.png
+          projectPath: Assets\Sprites\Fences.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences.png.meta
+        label: Fences.png.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences.png.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.png.meta
+          projectPath: Assets\Sprites\Fences.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences_0.asset
+        label: Fences_0.asset
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences_0.asset
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_0.asset
+          projectPath: Assets\Sprites\Fences_0.asset
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences_0.asset.meta
+        label: Fences_0.asset.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences_0.asset.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_0.asset.meta
+          projectPath: Assets\Sprites\Fences_0.asset.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences_1.asset
+        label: Fences_1.asset
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences_1.asset
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_1.asset
+          projectPath: Assets\Sprites\Fences_1.asset
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences_1.asset.meta
+        label: Fences_1.asset.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences_1.asset.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_1.asset.meta
+          projectPath: Assets\Sprites\Fences_1.asset.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences_2.asset
+        label: Fences_2.asset
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences_2.asset
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_2.asset
+          projectPath: Assets\Sprites\Fences_2.asset
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Fences_2.asset.meta
+        label: Fences_2.asset.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Fences_2.asset.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_2.asset.meta
+          projectPath: Assets\Sprites\Fences_2.asset.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Items
+        label: Items
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Sprites\Items\Open_Book.png
+        label: Open_Book.png
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Items\Open_Book.png
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Open_Book.png
+          projectPath: Assets\Sprites\Items\Open_Book.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Items\Open_Book.png.meta
+        label: Open_Book.png.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Items\Open_Book.png.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Open_Book.png.meta
+          projectPath: Assets\Sprites\Items\Open_Book.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Items\Water_Bottle.png
+        label: Water_Bottle.png
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Items\Water_Bottle.png
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Water_Bottle.png
+          projectPath: Assets\Sprites\Items\Water_Bottle.png
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Items\Water_Bottle.png.meta
+        label: Water_Bottle.png.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Items\Water_Bottle.png.meta
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Water_Bottle.png.meta
+          projectPath: Assets\Sprites\Items\Water_Bottle.png.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets\Sprites\Rectangular Palette.prefab
+        label: Rectangular Palette.prefab
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Sprites\Rectangular Palette.prefab
+          fullPath: C:\Users\John\Snow Game\Assets\Sprites\Rectangular Palette.prefab
+          projectPath: Assets\Sprites\Rectangular Palette.prefab
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\TextMesh Pro
+        label: TextMesh Pro
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Resources
+        label: Resources
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Resources\Fonts & Materials
+        label: Fonts & Materials
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
+          - Fallback.asset
+        label: LiberationSans SDF - Fallback.asset
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF
+            - Fallback.asset
+          fullPath: C:\Users\John\Snow Game\Assets\TextMesh Pro\Resources\Fonts &
+            Materials\LiberationSans SDF - Fallback.asset
+          projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+            SDF - Fallback.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: ProjectSettings
+        label: ProjectSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: ProjectSettings\BurstAotSettings_WebGL.json
+        label: BurstAotSettings_WebGL.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: ProjectSettings\BurstAotSettings_WebGL.json
+          fullPath: C:\Users\John\Snow Game\ProjectSettings\BurstAotSettings_WebGL.json
+          projectPath: ProjectSettings\BurstAotSettings_WebGL.json
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: ProjectSettings\CommonBurstAotSettings.json
+        label: CommonBurstAotSettings.json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: ProjectSettings\CommonBurstAotSettings.json
+          fullPath: C:\Users\John\Snow Game\ProjectSettings\CommonBurstAotSettings.json
+          projectPath: ProjectSettings\CommonBurstAotSettings.json
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: ProjectSettings\ProjectSettings.asset
+        label: ProjectSettings.asset
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\Users\John\Snow Game\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: ProjectSettings\TagManager.asset
+        label: TagManager.asset
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: ProjectSettings\TagManager.asset
+          fullPath: C:\Users\John\Snow Game\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: UserSettings
         label: UserSettings
         level: 0
@@ -1046,7 +2323,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1055,6 +2332,24 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        label: EditorUserSettings.asset
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Users\John\Snow Game\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: UserSettings\Layouts
         label: Layouts
         level: 1
@@ -1064,7 +2359,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1082,7 +2377,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: UserSettings\Layouts\default-2022.dwlt
@@ -1092,15 +2387,15 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 3
       selectedNode:
-        path: 
-        label: 
-        level: 0
-        isFolder: 0
+        path: Assets\Prefabs
+        label: Prefabs
+        level: 1
+        isFolder: 1
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
-        treeIsCheckable: 0
+        treeIsCheckable: 1
         checkState: 0
         isLocked: 0
         gitStatusEntry:
@@ -1111,15 +2406,81 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
+    - path: Assets\Prefabs\Branch&.prefab
+      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Branch&.prefab
+      projectPath: Assets\Prefabs\Branch&.prefab
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Prefabs\Log&.prefab
+      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Log&.prefab
+      projectPath: Assets\Prefabs\Log&.prefab
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Prefabs\PineTree.prefab
+      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\PineTree.prefab
+      projectPath: Assets\Prefabs\PineTree.prefab
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Prefabs\PineTree.prefab.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\PineTree.prefab.meta
+      projectPath: Assets\Prefabs\PineTree.prefab.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Prefabs\Water_Bottle.prefab
+      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Water_Bottle.prefab
+      projectPath: Assets\Prefabs\Water_Bottle.prefab
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Prefabs\Water_Bottle.prefab.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Prefabs\Water_Bottle.prefab.meta
+      projectPath: Assets\Prefabs\Water_Bottle.prefab.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Scenes\New Scene.unity
+      fullPath: C:\Users\John\Snow Game\Assets\Scenes\New Scene.unity
+      projectPath: Assets\Scenes\New Scene.unity
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Scenes\New Scene.unity.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Scenes\New Scene.unity.meta
+      projectPath: Assets\Scenes\New Scene.unity.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
     - path: Assets\Scenes\SampleScene.unity
       fullPath: C:\Users\John\Snow Game\Assets\Scenes\SampleScene.unity
       projectPath: Assets\Scenes\SampleScene.unity
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
+    - path: Assets\Scripts\Bottle.cs
+      fullPath: C:\Users\John\Snow Game\Assets\Scripts\Bottle.cs
+      projectPath: Assets\Scripts\Bottle.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Scripts\Bottle.cs.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Scripts\Bottle.cs.meta
+      projectPath: Assets\Scripts\Bottle.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
     - path: Assets\Scripts\firepit.cs
       fullPath: C:\Users\John\Snow Game\Assets\Scripts\firepit.cs
       projectPath: Assets\Scripts\firepit.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scripts\Item.cs
+      fullPath: C:\Users\John\Snow Game\Assets\Scripts\Item.cs
+      projectPath: Assets\Scripts\Item.cs
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
@@ -1129,6 +2490,18 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
+    - path: Assets\Scripts\Journal.cs
+      fullPath: C:\Users\John\Snow Game\Assets\Scripts\Journal.cs
+      projectPath: Assets\Scripts\Journal.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Scripts\Journal.cs.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Scripts\Journal.cs.meta
+      projectPath: Assets\Scripts\Journal.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
     - path: Assets\Scripts\PlayerInput.cs
       fullPath: C:\Users\John\Snow Game\Assets\Scripts\PlayerInput.cs
       projectPath: Assets\Scripts\PlayerInput.cs
@@ -1139,29 +2512,170 @@ MonoBehaviour:
       fullPath: C:\Users\John\Snow Game\Assets\Scripts\Temperature.cs
       projectPath: Assets\Scripts\Temperature.cs
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Scripts\Temperature.cs.meta
-      fullPath: C:\Users\John\Snow Game\Assets\Scripts\Temperature.cs.meta
-      projectPath: Assets\Scripts\Temperature.cs.meta
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Scripts\TreeScript.cs
+      fullPath: C:\Users\John\Snow Game\Assets\Scripts\TreeScript.cs
+      projectPath: Assets\Scripts\TreeScript.cs
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
+    - path: Assets\Scripts\TreeScript.cs.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Scripts\TreeScript.cs.meta
+      projectPath: Assets\Scripts\TreeScript.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Snow Game.inputactions
+      fullPath: C:\Users\John\Snow Game\Assets\Snow Game.inputactions
+      projectPath: Assets\Snow Game.inputactions
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Sprites\Fences.asset
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.asset
+      projectPath: Assets\Sprites\Fences.asset
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences.asset.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.asset.meta
+      projectPath: Assets\Sprites\Fences.asset.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences.png
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.png
+      projectPath: Assets\Sprites\Fences.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences.png.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences.png.meta
+      projectPath: Assets\Sprites\Fences.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences_0.asset
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_0.asset
+      projectPath: Assets\Sprites\Fences_0.asset
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences_0.asset.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_0.asset.meta
+      projectPath: Assets\Sprites\Fences_0.asset.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences_1.asset
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_1.asset
+      projectPath: Assets\Sprites\Fences_1.asset
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences_1.asset.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_1.asset.meta
+      projectPath: Assets\Sprites\Fences_1.asset.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences_2.asset
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_2.asset
+      projectPath: Assets\Sprites\Fences_2.asset
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Fences_2.asset.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Fences_2.asset.meta
+      projectPath: Assets\Sprites\Fences_2.asset.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Items\Open_Book.png
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Open_Book.png
+      projectPath: Assets\Sprites\Items\Open_Book.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Items\Open_Book.png.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Open_Book.png.meta
+      projectPath: Assets\Sprites\Items\Open_Book.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Items\Water_Bottle.png
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Water_Bottle.png
+      projectPath: Assets\Sprites\Items\Water_Bottle.png
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Items\Water_Bottle.png.meta
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Items\Water_Bottle.png.meta
+      projectPath: Assets\Sprites\Items\Water_Bottle.png.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets\Sprites\Rectangular Palette.prefab
+      fullPath: C:\Users\John\Snow Game\Assets\Sprites\Rectangular Palette.prefab
+      projectPath: Assets\Sprites\Rectangular Palette.prefab
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF -
+        Fallback.asset
+      fullPath: C:\Users\John\Snow Game\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Fallback.asset
+      projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+        SDF - Fallback.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: ProjectSettings\BurstAotSettings_WebGL.json
+      fullPath: C:\Users\John\Snow Game\ProjectSettings\BurstAotSettings_WebGL.json
+      projectPath: ProjectSettings\BurstAotSettings_WebGL.json
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: ProjectSettings\CommonBurstAotSettings.json
+      fullPath: C:\Users\John\Snow Game\ProjectSettings\CommonBurstAotSettings.json
+      projectPath: ProjectSettings\CommonBurstAotSettings.json
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: C:\Users\John\Snow Game\ProjectSettings\ProjectSettings.asset
+      projectPath: ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: ProjectSettings\TagManager.asset
+      fullPath: C:\Users\John\Snow Game\ProjectSettings\TagManager.asset
+      projectPath: ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: UserSettings\EditorUserSettings.asset
+      fullPath: C:\Users\John\Snow Game\UserSettings\EditorUserSettings.asset
+      projectPath: UserSettings\EditorUserSettings.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
     - path: UserSettings\Layouts\default-2022.dwlt
       fullPath: C:\Users\John\Snow Game\UserSettings\Layouts\default-2022.dwlt
       projectPath: UserSettings\Layouts\default-2022.dwlt
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    changedFilesText: 7 changed files
+    changedFilesText: 43 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-02-19T21:46:59.819-06:00
+      updatedTimeString: 2023-04-08T10:26:58.884-05:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-02-19T21:54:38.433-06:00
+      updatedTimeString: 2023-04-08T10:47:22.167-05:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-02-19T21:01:28.962-06:00
+      updatedTimeString: 2023-04-08T10:45:51.910-05:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -1364,7 +2878,7 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: master
   currentRemoteUrl: https://github.com/John-Mindrup/snow-game.git
-  statusAhead: 0
+  statusAhead: 1
   statusBehind: 0
   hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
@@ -1377,13 +2891,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-02-05T18:39:21.007-06:00
+    updatedTimeString: 2023-03-18T10:18:39.260-05:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-02-19T09:12:15.521-06:00
+    updatedTimeString: 2023-03-18T10:18:46.582-05:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-02-19T09:12:15.504-06:00
+    updatedTimeString: 2023-03-18T10:18:46.568-05:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -1401,7 +2915,7 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0
+  repositoryProgressValue: 0.99758744
   repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
@@ -1426,17 +2940,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1245
+    x: 1613
     y: 73
-    width: 674
-    height: 926
+    width: 306
+    height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -5316
+  m_LastSelectedObjectID: 36038
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1457,10 +2971,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 291
+    x: 156
     y: 73
-    width: 952
-    height: 541
+    width: 1455
+    height: 570
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1469,15 +2983,16 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1947466104216075254, guid: b5147e3bd9033814aa13dc9d28cb6b2b, type: 2}
     - {fileID: -2999699838532528947, guid: 1397e73663af80e41b6c81309eef8b88, type: 2}
+    - {fileID: -2485709750630531098, guid: 0dcd1bc34ce3d114dbeb766e9bb5e19a, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1.0789677
+    - e00: 0.5026527
       e01: 0
       e02: 0
-      e03: 248.72678
+      e03: 28.992882
       e10: 0
-      e11: 1.0789677
+      e11: 0.5026527
       e12: 0
-      e13: 368.70224
+      e13: 94.46845
       e20: 0
       e21: 0
       e22: 1
@@ -1502,10 +3017,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1.0110141
+      e01: 0
+      e02: 0
+      e03: 79.31672
+      e10: 0
+      e11: 1.0110141
+      e12: 0
+      e13: 49.657616
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: b5147e3bd9033814aa13dc9d28cb6b2b, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 0dcd1bc34ce3d114dbeb766e9bb5e19a, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1947466104216075254, guid: b5147e3bd9033814aa13dc9d28cb6b2b, type: 2}
+  - m_Target: {fileID: -2485709750630531098, guid: 0dcd1bc34ce3d114dbeb766e9bb5e19a, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1539,9 +3070,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 629
-    width: 1232
-    height: 362
+    y: 664
+    width: 1612
+    height: 327
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1559,22 +3090,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Sprites/Nature
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sprites/Nature
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\John\Snow Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92660000
-    m_LastClickedID: 26258
-    m_ExpandedIDs: 0000000092660000ae6600000c69000000ca9a3b
+    m_SelectedIDs: 60850000
+    m_LastClickedID: 34144
+    m_ExpandedIDs: 00000000a28400005485000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1602,7 +3133,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000092660000
+    m_ExpandedIDs: 00000000a2840000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1630,7 +3161,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000f6660000345f0000ce5e00000e5f0000dc61000028630000566300007e6e0000cc640000bc670000
+    m_ExpandedInstanceIDs: c6230000f6660000345f0000ce5e00000e5f0000dc61000028630000566300007e6e0000cc640000bc6700008c650000c0650000aa8a00000e8500009e84000042830000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1678,9 +3209,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1233
+    x: 1613
     y: 73
-    width: 686
+    width: 306
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1721,8 +3252,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 290
-    height: 535
+    width: 301
+    height: 570
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1730,9 +3261,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 1a850000
       m_LastClickedID: 0
-      m_ExpandedIDs: 24fbfffff46300000e64000048640000
+      m_ExpandedIDs: 24fbfffff66a0000346d000030780000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1776,10 +3307,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 291
+    x: 302
     y: 73
-    width: 940
-    height: 535
+    width: 1309
+    height: 570
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2047,9 +3578,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.5515327, y: 0.28553846, z: 0.32636428}
+    m_Target: {x: 312.68152, y: 100.62675, z: -0.5301268}
     speed: 2
-    m_Value: {x: 2.5515327, y: 0.28553846, z: 0.32636428}
+    m_Value: {x: 299.05768, y: 96.1978, z: -0.4428325}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2099,9 +3630,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.644264
+    m_Target: 202.7188
     speed: 2
-    m_Value: 7.644264
+    m_Value: 193.98927
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2135,6 +3666,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 664
+    width: 1612
+    height: 327
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -2146,21 +3705,23 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 291
+    x: 302
     y: 73
-    width: 940
-    height: 535
+    width: 1309
+    height: 570
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
+  m_SerializedViewNames:
+  - UnityEditor.DeviceSimulation.SimulatorWindow
+  m_SerializedViewValues:
+  - C:\Users\John\Snow Game\Library\PlayModeViewStates\b1239e3bef5681446a9b1bcb1787c348
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 940, y: 514}
+  m_TargetSize: {x: 976, y: 549}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2174,16 +3735,16 @@ MonoBehaviour:
   m_PlayFocused: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -470
-    m_HBaseRangeMax: 470
-    m_VBaseRangeMin: -257
-    m_VBaseRangeMax: 257
+    m_HBaseRangeMin: -488
+    m_HBaseRangeMax: 488
+    m_VBaseRangeMin: -274.5
+    m_VBaseRangeMax: 274.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2192,7 +3753,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -2201,23 +3762,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 940
-      height: 514
+      width: 1309
+      height: 549
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 470, y: 257}
+    m_Translation: {x: 654.5, y: 274.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -470
-      y: -257
-      width: 940
-      height: 514
+      x: -654.5
+      y: -274.5
+      width: 1309
+      height: 549
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 940, y: 535}
+  m_LastWindowPixelSize: {x: 1309, y: 570}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2225,31 +3786,3 @@ MonoBehaviour:
   m_RenderTexture: {fileID: 0}
   m_showToolbar: 1
   m_showToolbarOnFullscreen: 0
---- !u!114 &20
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 629
-    width: 1232
-    height: 362
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []

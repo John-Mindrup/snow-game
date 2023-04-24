@@ -5,7 +5,7 @@ using UnityEngine;
 public class Items : MonoBehaviour
 {
     public List<GameObject> pickupableItems;
-    public List<GameObject> recipe1, recipe2, recipe3;
+    public List<GameObject> recipe1, recipe2, recipe3, recipe4;
     private List<List<GameObject>> recipes = new();
     public List<GameObject> products;
     private List<firepit> firepits = new();
@@ -27,6 +27,7 @@ public class Items : MonoBehaviour
             this.recipes.Add(recipe1);
             this.recipes.Add(recipe2);
             this.recipes.Add(recipe3);
+            this.recipes.Add(recipe4);
             _instance = this;
         }
     }
